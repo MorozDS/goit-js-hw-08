@@ -6,6 +6,6 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{}],"kz9M":[function(require,module,exports) {
 
 },{}],"TfQ5":[function(require,module,exports) {
-"use strict";var e=require("./gallery-items"),l=i(require("simplelightbox"));function i(e){return e&&e.__esModule?e:{default:e}}require("simplelightbox/dist/simple-lightbox.min.css");const a=document.querySelector(".gallery"),r=e.galleryItems.map(e=>`\n<a class="gallery__item" href="${e.original}">\n  <img class="gallery__image" src="${e.preview}" alt="${e.description}" />\n</a>\n`).join("");a.insertAdjacentHTML("beforeend",r);const t=new l.default(".gallery a",{captionsData:"alt",captionDelay:250});
+"use strict";var e=require("./gallery-items"),t=l(require("simplelightbox"));function l(e){return e&&e.__esModule?e:{default:e}}require("simplelightbox/dist/simple-lightbox.min.css");const a=document.querySelector(".gallery"),i=e.galleryItems.map(e=>`\n<a class="gallery__item" href="${e.original}">\n  <img class="gallery__image" src="${e.preview}" alt="${e.description}" />\n</a>\n`).join("");function r(e){e.preventDefault(),e.target.nodeName}a.insertAdjacentHTML("beforeend",i),a.addEventListener("click",r),new t.default(".gallery a",{captionsData:"alt",captionDelay:250});
 },{"./gallery-items":"q5Rn","simplelightbox":"yx6k","simplelightbox/dist/simple-lightbox.min.css":"kz9M"}]},{},["TfQ5"], null)
-//# sourceMappingURL=/goit-js-hw-08/01-gallery.d1751cbc.js.map
+//# sourceMappingURL=/goit-js-hw-08/01-gallery.e1a11402.js.map
