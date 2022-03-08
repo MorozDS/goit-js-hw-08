@@ -17,9 +17,19 @@ const galleryList = galleryItems.map(item => `
 
 listRef.insertAdjacentHTML('beforeend', galleryList);
 
-const gallery =  new SimpleLightbox('.gallery a',
+listRef.addEventListener('click', galleryClick);
+function galleryClick(event) {
+  event.preventDefault();
+  if (event.target.nodeName !== "IMG") {
+    return
+  };
+    
+};
+
+ new SimpleLightbox('.gallery a',
     {
     captionsData: 'alt',
     captionDelay: 250,
     }
-);
+   
+    );
